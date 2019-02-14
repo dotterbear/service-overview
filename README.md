@@ -1,8 +1,8 @@
 # service-overview
 
-![overview1](https://github.com/dotterbear/service-overview/chart/1.png)
+![overview1](https://github.com/dotterbear/service-overview/raw/master/chart/1.png)
 
-![overview2](https://github.com/dotterbear/service-overview/chart/1.png)
+![overview2](https://github.com/dotterbear/service-overview/raw/master/chart/2.png)
 
 ### Service
 
