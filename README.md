@@ -6,17 +6,19 @@
 
 ### Service
 
-**[service-search-ui](https://github.com/dotterbear/service-search-ui)** - ...
+**[service-search-ui](https://github.com/dotterbear/service-search-ui)** - A search UI.
 
-**[service-eureka-server](https://github.com/dotterbear/service-eureka-server)** - ...
+**[service-eureka-server](https://github.com/dotterbear/service-eureka-server)** - A eureka server with docker image.
 
-**service-config-server** - ...
+**[service-zuul-server](https://github.com/dotterbear/service-zuul-server)** - A proxy zuul server for frontend.
 
-**[service-eureka-scheduler](https://github.com/dotterbear/service-eureka-scheduler)** - ...
+**service-config-server** - A spring cloud config server with git registry and docker image.
 
-**[service-jobad-reader](https://github.com/kan01234/jobad-reader)** - ...
+**[service-rss-reader](https://github.com/dotterbear/service-rss-reader)** - A eureka client to fetch rss.
 
-**[service-rss-reader](https://github.com/dotterbear/service-rss-reader)** - ...
+**[service-eureka-scheduler](https://github.com/dotterbear/service-eureka-scheduler)** - A fixed rate scheduler to call other eureka client with restTemplate, ribbon and hystrix.
+
+**[service-jobad-reader](https://github.com/dotterbear/service-jobad-reader)** - A reader to parse rss and search.
 
 ### TODO List
-- [] Service description
+- [] Release page
