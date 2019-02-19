@@ -30,3 +30,5 @@
 
 ### TODO List
 - [] Release page
+- [] docker compose
+- [] add dev env
