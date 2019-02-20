@@ -4,11 +4,11 @@
 
 ![overview2](https://github.com/dotterbear/service-overview/raw/master/chart/2.png)
 
-### Communicating between Microservices
+## Communicating between Microservices
 
 ![overview3](https://github.com/dotterbear/service-overview/raw/master/chart/jobad-ms.png)
 
-### Service
+## Service
 
 **[service-search-ui](https://github.com/dotterbear/service-search-ui)** - An Angular search UI with docker image. [Demo site](http://35.212.3.117:8768/)
 
@@ -24,11 +24,11 @@
 
 **[service-jobad-reader](https://github.com/dotterbear/service-jobad-reader)** - A reader to parse rss and search.
 
-### Pipeline
+## Pipeline
 
 ![overview3](https://github.com/dotterbear/service-overview/raw/master/chart/3.png)
 
-### TODO List
+## TODO List
 - [] Release page
 - [] docker compose
 - [] add dev env
