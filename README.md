@@ -10,7 +10,7 @@
 
 ### Service
 
-**[service-search-ui](https://github.com/dotterbear/service-search-ui)** - A search UI.
+**[service-search-ui](https://github.com/dotterbear/service-search-ui)** - An Angular search UI with docker image. [Demo site](http://35.212.3.117:8768/)
 
 **[service-eureka-server](https://github.com/dotterbear/service-eureka-server)** - A eureka server with docker image.
 
