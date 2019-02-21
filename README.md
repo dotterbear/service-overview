@@ -32,3 +32,5 @@
 - [] Release page
 - [] docker compose
 - [] add dev env
+- [] add development guide
+- [] add development init script
