@@ -1,0 +1,7 @@
+git@github.com:dotterbear/service-eureka-server.git
+git@github.com:dotterbear/service-config-server.git
+git@github.com:dotterbear/service-jobad-reader.git
+git@github.com:dotterbear/service-zuul-server.git
+git@github.com:dotterbear/service-rss-reader.git
+git@github.com:dotterbear/service-eureka-scheduler.git
+git@github.com:dotterbear/service-repo-config.git
