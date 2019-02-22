@@ -42,6 +42,7 @@ mongo --port 37017
 
 5. Starting others services
 Go into the service-jobad-reader, service-eureka-scheduler, service-zuul-server projects and repeat the steps of starting service-config-server
+
 ***service-rss-reader local version is in the development, thanks!***
 
 # service-overview
@@ -78,5 +79,5 @@ Go into the service-jobad-reader, service-eureka-scheduler, service-zuul-server 
 - [] Release page
 - [] docker compose
 - [] add dev env
-- [] add development guide
-- [] add development init script
+- [x] add development guide
+- [x] add development init script
