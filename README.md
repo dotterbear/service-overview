@@ -1,51 +1,87 @@
 # Local Setup Guide
+
 ## Prerequisites
+
 - Maven version >= 3.5.4
 - Java 8
 - MongoDB version >= 4.0.5
 
 ## Get Started
+
 ### 1. run the [init-script](https://github.com/dotterbear/service-overview/tree/master/init-scripts), it will clone the related projects
 
 ### 2. Go into the service-eureka-server project and execute following commands
-```
+
+```mvn
 mvn clean spring-boot:run -Dspring.profiles.active=dev
 ```
+
 After the application started up, please check [Eureka server page](http://localhost:8761/) is on
 
 ### 3. Go into the service-config-server project and execute following commands
-```
+
+```mvn
 mvn clean spring-boot:run -Dspring.profiles.active=dev
 ```
+
 After the application started up, please go to [Eureka server page](http://localhost:8761/) and check application is registered in Eureka
 
 ### 4. Start the MongoDB instance with Docker (if you want to create that on local, please go to 4.1)
+
 Go into the mongodb-docker-template project, build the image with Dockerfile-dev and run it
 
 Example for service-jobad-reader:
 
-```
+```docker
 cd ./mongodb-docker-template/service-jobad-reader
 docker build -f Dockerfile-dev .
 docker run -p 37017:27017 -d ${please-replace-with-image-id}
 ```
 
 ### 4.1. Start the MongoDB instance on local
+
 Start up a local MongoDB instance on port 37017
-```
+
+```mongod
 mongod --port 37017
 ```
+
 Connect it with MongoDB Shell and paste the [script](https://raw.githubusercontent.com/dotterbear/mongodb-docker-template/master/service-jobad-reader/init-dev.js)
-```
+
+```mongo
 mongo --port 37017
 ```
 
-5. Starting others services
+### 5. Starting others services
+
 Go into the service-jobad-reader, service-eureka-scheduler, service-zuul-server projects and repeat the steps of starting service-config-server
 
 ***service-rss-reader local version is in the development, thanks!***
 
-# service-overview
+## Get Started (docker-compose)
+
+### 1. Run Server
+
+```docker
+docker-compose -f docker-compose-dev-server.yml up --build
+```
+
+### 2. Run Service
+
+```docker
+export BRIDGE_NETWORK=$(docker inspect service-overview_bridge-network | grep '"Gateway"' | head -n 1 | grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}')
+docker-compose -f docker-compose-dev-service.yml up --build
+```
+
+### 3. Run UI
+
+```node
+cd ../service-search-ui
+npm install
+ng serve
+```
+
+## service-overview
 
 ![overview1](https://github.com/dotterbear/service-overview/raw/master/chart/1.png)
 
@@ -76,6 +112,7 @@ Go into the service-jobad-reader, service-eureka-scheduler, service-zuul-server 
 ![overview3](https://github.com/dotterbear/service-overview/raw/master/chart/3.png)
 
 ## TODO List
+
 - [] Release page
 - [] docker compose
 - [] add dev env

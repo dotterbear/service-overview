@@ -5,3 +5,5 @@ git@github.com:dotterbear/service-zuul-server.git
 git@github.com:dotterbear/service-rss-reader.git
 git@github.com:dotterbear/service-eureka-scheduler.git
 git@github.com:dotterbear/service-repo-config.git
+git@github.com/dotterbear/mongodb-docker-template.git
+git@github.com/dotterbear/service-search-ui.git

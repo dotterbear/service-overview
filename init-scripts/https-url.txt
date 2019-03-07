@@ -5,3 +5,5 @@ https://github.com/dotterbear/service-zuul-server.git
 https://github.com/dotterbear/service-rss-reader.git
 https://github.com/dotterbear/service-eureka-scheduler.git
 https://github.com/dotterbear/service-repo-config.git
+https://github.com/dotterbear/mongodb-docker-template.git
+https://github.com/dotterbear/service-search-ui.git
