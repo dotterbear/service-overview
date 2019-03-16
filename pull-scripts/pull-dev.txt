@@ -1,0 +1,9 @@
+service-eureka-server|dev
+service-config-server|dev
+service-jobad-reader|dev
+service-zuul-server|dev
+service-rss-reader|dev
+service-eureka-scheduler|dev
+service-repo-config|dev
+mongodb-docker-template|dev
+service-search-ui|dev

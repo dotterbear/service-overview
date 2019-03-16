@@ -1,0 +1,9 @@
+service-eureka-server|master
+service-config-server|master
+service-jobad-reader|master
+service-zuul-server|master
+service-rss-reader|master
+service-eureka-scheduler|master
+service-repo-config|master
+mongodb-docker-template|master
+service-search-ui|master
