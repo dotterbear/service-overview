@@ -1,0 +1,32 @@
+version: '3'
+services:
+  # service-eureka-server
+  eureka:
+    restart: on-failure:5
+    image: registry.gitlab.com/dotterbear/service-eureka-server
+    volumes:
+      - /tmp/m2:/root/.m2:rw
+    ports:
+      - 8761:8761
+    expose:
+      - 8761
+    networks:
+      - bridge-network
+  # service-config-server
+  config:
+    restart: on-failure:5
+    image: registry.gitlab.com/dotterbear/service-config-server
+    depends_on:
+      - eureka
+    volumes:
+      - /tmp/m2:/root/.m2:rw
+    ports:
+      - 33001:33001
+    expose:
+      - 33001
+    networks:
+      - bridge-network
+
+networks:
+  bridge-network:
+    driver: bridge
